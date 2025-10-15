@@ -1,0 +1,5 @@
+node_modules
+dist/
+src/docs/bak/
+src/data/docs copy.json
+src/data/docs.json

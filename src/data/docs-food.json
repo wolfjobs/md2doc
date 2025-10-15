@@ -1,0 +1,170 @@
+{
+  "title": "美食指南文档中心",
+  "description": "全面的美食制作、食材介绍和烹饪技巧指南",
+  "version": "1.0.0",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "美食概览",
+      "icon": "fas fa-utensils",
+      "items": [
+        {
+          "id": "introduction",
+          "title": "美食指南介绍",
+          "file": "introduction.md",
+          "description": "美食指南的整体介绍和目录说明"
+        }
+      ]
+    },
+    {
+      "id": "cuisines",
+      "title": "菜系分类",
+      "icon": "fas fa-globe-asia",
+      "items": [
+        {
+          "id": "chinese-cuisine",
+          "title": "中式菜系",
+          "file": "cuisines/chinese-cuisine.md",
+          "description": "中国传统菜系介绍和特色菜品"
+        },
+        {
+          "id": "western-cuisine",
+          "title": "西式菜系",
+          "file": "cuisines/western-cuisine.md",
+          "description": "欧美菜系特色和经典菜品"
+        },
+        {
+          "id": "japanese-cuisine",
+          "title": "日式料理",
+          "file": "cuisines/japanese-cuisine.md",
+          "description": "日本料理的精髓和制作技巧"
+        },
+        {
+          "id": "korean-cuisine",
+          "title": "韩式料理",
+          "file": "cuisines/korean-cuisine.md",
+          "description": "韩国传统美食和现代创新"
+        }
+      ]
+    },
+    {
+      "id": "cooking-methods",
+      "title": "烹饪技法",
+      "icon": "fas fa-fire",
+      "items": [
+        {
+          "id": "basic-cooking",
+          "title": "基础烹饪",
+          "file": "cooking/basic-cooking.md",
+          "description": "炒、煮、蒸、炸等基础烹饪方法"
+        },
+        {
+          "id": "advanced-cooking",
+          "title": "高级技法",
+          "file": "cooking/advanced-cooking.md",
+          "description": "分子料理、低温烹饪等高级技法"
+        },
+        {
+          "id": "baking",
+          "title": "烘焙技巧",
+          "file": "cooking/baking.md",
+          "description": "面包、蛋糕、甜点的制作工艺"
+        }
+      ]
+    },
+    {
+      "id": "ingredients",
+      "title": "食材百科",
+      "icon": "fas fa-seedling",
+      "items": [
+        {
+          "id": "vegetables",
+          "title": "蔬菜类",
+          "file": "ingredients/vegetables.md",
+          "description": "各种蔬菜的营养价值和烹饪方法"
+        },
+        {
+          "id": "meat-seafood",
+          "title": "肉类海鲜",
+          "file": "ingredients/meat-seafood.md",
+          "description": "肉类和海鲜的选购和烹饪技巧"
+        },
+        {
+          "id": "spices-herbs",
+          "title": "调料香料",
+          "file": "ingredients/spices-herbs.md",
+          "description": "各种调料和香料的搭配使用"
+        }
+      ]
+    },
+    {
+      "id": "recipes",
+      "title": "精选食谱",
+      "icon": "fas fa-book-open",
+      "items": [
+        {
+          "id": "appetizers",
+          "title": "开胃菜",
+          "file": "recipes/appetizers.md",
+          "description": "各种开胃小菜的制作方法"
+        },
+        {
+          "id": "main-courses",
+          "title": "主菜",
+          "file": "recipes/main-courses.md",
+          "description": "经典主菜和家常菜的制作"
+        },
+        {
+          "id": "desserts",
+          "title": "甜品",
+          "file": "recipes/desserts.md",
+          "description": "精美甜品的制作工艺"
+        },
+        {
+          "id": "beverages",
+          "title": "饮品",
+          "file": "recipes/beverages.md",
+          "description": "各种饮品的调制方法"
+        }
+      ]
+    },
+    {
+      "id": "kitchen-tools",
+      "title": "厨具设备",
+      "icon": "fas fa-tools",
+      "items": [
+        {
+          "id": "basic-tools",
+          "title": "基础厨具",
+          "file": "tools/basic-tools.md",
+          "description": "厨房必备的基础工具介绍"
+        },
+        {
+          "id": "advanced-equipment",
+          "title": "高级设备",
+          "file": "tools/advanced-equipment.md",
+          "description": "专业厨房设备和现代厨具"
+        }
+      ]
+    },
+    {
+      "id": "nutrition-health",
+      "title": "营养健康",
+      "icon": "fas fa-heart",
+      "items": [
+        {
+          "id": "nutrition-basics",
+          "title": "营养基础",
+          "file": "nutrition/nutrition-basics.md",
+          "description": "食物营养价值和健康饮食原则"
+        },
+        {
+          "id": "dietary-restrictions",
+          "title": "特殊饮食",
+          "file": "nutrition/dietary-restrictions.md",
+          "description": "素食、无麸质等特殊饮食需求"
+        }
+      ]
+    }
+  ]
+}

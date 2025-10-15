@@ -1,0 +1,224 @@
+/* Prism.js 代码高亮样式 */
+
+/* 基础样式 */
+code[class*="language-"],
+pre[class*="language-"] {
+    color: #f8f8f2;
+    background: none;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 1em;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
+
+/* 深色主题 */
+[data-theme="dark"] code[class*="language-"],
+[data-theme="dark"] pre[class*="language-"] {
+    color: #e6e6e6;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.5);
+}
+
+/* 浅色主题 */
+[data-theme="light"] code[class*="language-"],
+[data-theme="light"] pre[class*="language-"] {
+    color: #333;
+    text-shadow: none;
+}
+
+/* 代码块 */
+pre[class*="language-"] {
+    padding: 1em;
+    margin: 0.5em 0;
+    overflow: auto;
+    border-radius: 0.3em;
+    background: #272822;
+}
+
+[data-theme="dark"] pre[class*="language-"] {
+    background: #1e1e1e;
+}
+
+[data-theme="light"] pre[class*="language-"] {
+    background: #f8f8f8;
+    border: 1px solid #e1e1e1;
+}
+
+/* 行内代码 */
+:not(pre) > code[class*="language-"] {
+    padding: 0.1em 0.3em;
+    border-radius: 0.3em;
+    white-space: normal;
+    background: #272822;
+}
+
+[data-theme="dark"] :not(pre) > code[class*="language-"] {
+    background: #2d2d2d;
+}
+
+[data-theme="light"] :not(pre) > code[class*="language-"] {
+    background: #f1f1f1;
+    color: #d63384;
+}
+
+/* 语法高亮颜色 */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: #8292a2;
+}
+
+.token.punctuation {
+    color: #f8f8f2;
+}
+
+.token.namespace {
+    opacity: 0.7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+    color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+    color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+    color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+    color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+    color: #e6db74;
+}
+
+.token.keyword {
+    color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+    color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+    font-weight: bold;
+}
+
+.token.italic {
+    font-style: italic;
+}
+
+.token.entity {
+    cursor: help;
+}
+
+/* 行号 */
+.line-numbers .line-numbers-rows {
+    border-right: 1px solid #999;
+    font-size: 100%;
+    line-height: inherit;
+    margin-right: 0.5em;
+    padding-right: 0.5em;
+    text-align: right;
+    user-select: none;
+    white-space: nowrap;
+    width: 3.5em;
+}
+
+.line-numbers-rows > span {
+    display: block;
+    counter-increment: linenumber;
+}
+
+.line-numbers-rows > span:before {
+    content: counter(linenumber);
+    color: #999;
+    display: block;
+    padding-right: 0.8em;
+    text-align: right;
+}
+
+/* 复制按钮 */
+.code-copy-btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 0.25rem;
+    color: #f8f8f2;
+    cursor: pointer;
+    font-size: 0.875rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.code-copy-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.code-copy-btn.copied {
+    background: #28a745;
+    color: white;
+}
+
+/* 代码块容器 */
+.code-block-container {
+    position: relative;
+    margin: 1rem 0;
+}
+
+.code-block-container:hover .code-copy-btn {
+    opacity: 1;
+}
+
+.code-copy-btn {
+    opacity: 0;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    pre[class*="language-"] {
+        font-size: 0.8rem;
+        padding: 0.75rem;
+    }
+    
+    .line-numbers .line-numbers-rows {
+        width: 2.5em;
+    }
+}
