@@ -1,6 +1,6 @@
-# Support Center 文档站点
+# Md2doc 文档站点
 
-一个基于 Markdown 的现代化文档网站，用于展示 Support Center 项目的完整文档。
+一个基于 Markdown 的现代化文档网站，用于展示 md2doc 项目的完整文档。
 
 ## 特性
 
